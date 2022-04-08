@@ -12,12 +12,18 @@ public class Bird : MonoBehaviour
 
     void OnMouseDown()
     {
-        GetComponent<SpriteRenderer>().color = Color.Red;
+        GetComponent<SpriteRenderer>().color = Color.red;
     }
 
     void OnMouseUp()
     {
-        GetComponent<SpriteRenderer>().color = Color.White;
+        GetComponent<SpriteRenderer>().color = Color.white;
+    }
+
+    void OnMouseDrag()
+    {
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        transform.position = new Vector3(mousePosition.x, mousePosition.y, transform.position.z);
     }
 
     // Update is called once per frame
