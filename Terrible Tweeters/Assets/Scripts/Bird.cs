@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Bird : MonoBehaviour
 {
+    [SerializeField] float _launchForce = 500;
+
     Vector2 _startPosition;
     Rigidbody2D _rigidBody2D;
     SpriteRenderer _spriteRenderer;
@@ -33,7 +35,7 @@ public class Bird : MonoBehaviour
         direction.Normalize();
 
         _rigidBody2D.isKinematic = false;
-        _rigidBody2D.AddForce(direction * 500);
+        _rigidBody2D.AddForce(direction * _launchForce);
 
         _spriteRenderer.color = Color.white;
     }
@@ -48,5 +50,12 @@ public class Bird : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        _rigidBody2D.position = _startPosition;
+        _rigidBody2D.isKinematic = true;
+        _rigidBody2D.velocity = Vector2.zero;
     }
 }
