@@ -2,10 +2,11 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelController : MonoBehaviour
 {
-    [SerializeField] string _nextLevelname;
+    [SerializeField] string _nextLevelName;
     Monster[] _monsters;
     
 
@@ -25,7 +26,8 @@ public class LevelController : MonoBehaviour
 
     void GoToNextLevel()
     {
-        Debug.Log("Go To Level" + _nextLevelname);
+        Debug.Log("Go To Level" + _nextLevelName);
+        SceneManager.LoadScene(_nextLevelName);
     }
 
     bool MonstersAreAllDead()
