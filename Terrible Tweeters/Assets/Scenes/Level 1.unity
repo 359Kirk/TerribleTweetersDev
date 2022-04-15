@@ -2654,7 +2654,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8af42d4fbf332748a6941a4007109bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _volumeParameter: Master
+  _volumeParameter: SFX
   _mixer: {fileID: 24100000, guid: 2fd21d697e812bf4b80b1fe6eb758060, type: 2}
   _slider: {fileID: 1394578397}
   _multiplier: 30
@@ -3889,7 +3889,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 390492379592717509, guid: 382c57777ecb04748a2929807589ac80, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.196615
+      value: -5.196616
       objectReference: {fileID: 0}
     - target: {fileID: 390492379592717509, guid: 382c57777ecb04748a2929807589ac80, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3913,7 +3913,7 @@ PrefabInstance:
       objectReference: {fileID: 528897244}
     - target: {fileID: 390492380420557345, guid: 382c57777ecb04748a2929807589ac80, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.196615
+      value: -5.196616
       objectReference: {fileID: 0}
     - target: {fileID: 390492380420557345, guid: 382c57777ecb04748a2929807589ac80, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3925,7 +3925,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 390492380420557534, guid: 382c57777ecb04748a2929807589ac80, type: 3}
       propertyPath: orthographic size
-      value: 5.6695347
+      value: 6.131739
       objectReference: {fileID: 0}
     - target: {fileID: 489197895925526339, guid: 382c57777ecb04748a2929807589ac80, type: 3}
       propertyPath: m_RootOrder
